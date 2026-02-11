@@ -1,16 +1,31 @@
 function Header() {
   return (
-    <header style={{ marginBottom: "2rem" }}>
-      <h1 style={{ marginBottom: "0.3rem" }}>
-        Esteban Andrés Rivera Novillo – Software Engineer (Frontend)
+    <header>
+      <img
+        src="/og-image.jpg"
+        alt="Esteban Rivera"
+        style={{
+          width: "120px",
+          height: "120px",
+          borderRadius: "50%",
+          objectFit: "cover",
+          marginBottom: "1.5rem",
+        }}
+      />
+
+      <h1 style={{ fontSize: "1.5rem", marginBottom: "0.5rem" }}>
+        Esteban Rivera
       </h1>
-      <p style={{ margin: 0 }}>
-        Ingeniero en Electrónica y Automatización · React · TypeScript · JavaScript
+
+      <p style={{ opacity: 0.8, marginBottom: "1rem" }}>
+        Software Engineer (Frontend)
       </p>
-      <p style={{ margin: 0 }}>Quito – Ecuador</p>
-      <p style={{ marginTop: "0.5rem" }}>
-        📧 estebanrivera200039@gmail.com · 📱 0995085634
-      </p>
+
+      <div style={{ fontSize: "0.9rem", lineHeight: "1.8" }}>
+        <p>Quito – Ecuador</p>
+        <p>estebanrivera200039@gmail.com</p>
+        <p>+593 995085634</p>
+      </div>
     </header>
   );
 }

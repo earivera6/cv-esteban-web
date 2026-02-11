@@ -7,27 +7,13 @@ import Languages from "./components/Languages";
 
 function App() {
   return (
-    <div
-      style={{
-        maxWidth: "900px",
-        margin: "0 auto",
-        padding: "2rem",
-        fontFamily: "system-ui, sans-serif",
-        lineHeight: 1.6,
-      }}
-    >
+    <div className="main-container">
       <Header />
-
       <Profile />
-
       <Experience />
-
       <Education />
-
       <Skills />
-
       <Languages />
-      
     </div>
   );
 }

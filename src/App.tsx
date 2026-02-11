@@ -1,23 +1,34 @@
-import Header from "./components/Header";
-import Profile from "./components/Profile";
-import Experience from "./components/Experience";
-import Education from "./components/Education";
-import Skills from "./components/Skills";
+import { useState, useEffect } from "react";
+import Navbar from "./components/Navbar";
 
 function App() {
-  return (
-    <div className="layout">
-      <aside className="sidebar">
-        <Header />
-      </aside>
+  const [theme, setTheme] = useState("light");
+  const [language, setLanguage] = useState<"es" | "en">("es");
 
-      <main className="content">
-        <Profile />
-        <Experience />
-        <Education />
-        <Skills />
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme(theme === "light" ? "dark" : "light");
+  };
+
+  const toggleLanguage = () => {
+    setLanguage(language === "es" ? "en" : "es");
+  };
+
+  return (
+    <>
+      <Navbar
+        toggleTheme={toggleTheme}
+        toggleLanguage={toggleLanguage}
+        language={language}
+      />
+
+      <main>
+        {/* Hero, About, Experience... */}
       </main>
-    </div>
+    </>
   );
 }
 

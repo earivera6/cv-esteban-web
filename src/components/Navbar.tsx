@@ -1,4 +1,8 @@
 
+interface NavbarProps {
+  activeSection: string;
+}
+
 interface Props {
   toggleTheme: () => void;
   toggleLanguage: () => void;

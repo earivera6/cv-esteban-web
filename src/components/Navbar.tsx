@@ -56,9 +56,9 @@ export default function Navbar({
   ];
 
   const logoSrc =
-  theme === "dark"
-    ? `${import.meta.env.BASE_URL}brand/logo_esteban_dark.png`
-    : `${import.meta.env.BASE_URL}brand/logo_esteban_light.png`;
+    theme === "dark"
+      ? `${import.meta.env.BASE_URL}brand/logo_esteban_dark.png`
+      : `${import.meta.env.BASE_URL}brand/logo_esteban_light.png`;
 
   return (
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>

@@ -19,3 +19,13 @@ body {
   color: var(--text);
   transition: all 0.3s ease;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.section {
+  padding: 100px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}

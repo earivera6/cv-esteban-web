@@ -4,12 +4,14 @@ interface Props {
   toggleTheme: () => void;
   toggleLanguage: () => void;
   language: "es" | "en";
+  theme: "light" | "dark";
 }
 
 export default function Navbar({
   toggleTheme,
   toggleLanguage,
   language,
+  theme
 }: Props) {
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("about");
@@ -53,11 +55,25 @@ export default function Navbar({
     { id: "contact", label: language === "es" ? "Contacto" : "Contact" },
   ];
 
+  const logoSrc =
+  theme === "dark"
+    ? `${import.meta.env.BASE_URL}brand/logo_esteban_dark.png`
+    : `${import.meta.env.BASE_URL}brand/logo_esteban_light.png`;
+
   return (
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="nav-container">
         <div className="nav-logo" onClick={() => scrollToSection("about")}>
-          ER
+          <a
+            href="#about"
+            className="nav-logo"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection("about");
+            }}
+          >
+            <img src={logoSrc} alt="Esteban Rivera Logo" className="logo-img" />
+          </a>
         </div>
 
         <ul className="nav-menu">

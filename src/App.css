@@ -4,11 +4,10 @@
   position: fixed;
   top: 0;
   width: 100%;
-  backdrop-filter: blur(10px);
-  background: rgba(255, 255, 255, 0.9);
-  border-bottom: 1px solid #e5e7eb;
+  background: var(--nav-bg);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border-color);
   z-index: 1000;
-  transition: all 0.3s ease;
 }
 
 .dark .navbar {
@@ -21,34 +20,37 @@
 }
 
 .nav-container {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 1rem 2rem;
+  padding: 0.8rem 2rem;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
 .nav-logo {
-  font-weight: 700;
+  font-weight: 50;
   font-size: 1.2rem;
   cursor: pointer;
 }
 
 .nav-menu {
-  display: flex;
-  gap: 2rem;
   list-style: none;
+  display: flex;            /* 🔥 ESTO lo vuelve horizontal */
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
 }
 
+/* LINKS */
 .nav-link {
   background: none;
   border: none;
   font-size: 0.95rem;
-  cursor: pointer;
-  color: inherit;
   font-weight: 500;
-  transition: color 0.2s ease;
+  cursor: pointer;
+  color: var(--text-primary);
+  transition: 0.2s ease;
 }
 
 .nav-link:hover {
@@ -66,11 +68,10 @@
 
 .control-btn {
   background: none;
-  border: 1px solid #e5e7eb;
-  padding: 0.4rem 0.6rem;
+  border: 1px solid var(--border-color);
+  padding: 0.4rem 0.8rem;
   border-radius: 6px;
   cursor: pointer;
-  font-size: 0.9rem;
 }
 
 .dark .control-btn {

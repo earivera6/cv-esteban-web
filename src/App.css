@@ -28,6 +28,12 @@
   justify-content: space-between;
 }
 
+/* LOGO */
+.logo-img {
+  height: 40px;   /* 🔥 Aquí controlas tamaño */
+  width: auto;
+}
+
 .nav-logo {
   font-weight: 50;
   font-size: 1.2rem;

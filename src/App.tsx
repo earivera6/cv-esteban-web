@@ -3,7 +3,17 @@ function App() {
     <div>
       <header>
         <nav>
-          <h1>Esteban Rivera</h1>
+          <div className="nav-brand">
+            <a href="#hero" className="nav-brand-link">
+              <img
+                src="/cv-esteban-web/Brand/logo_dark.png"
+                alt="Logo Esteban Rivera"
+                className="nav-logo"
+              />
+              <h1>Esteban Rivera</h1>
+            </a>
+          </div>
+
           <ul>
             <li><a href="#about">Sobre mí</a></li>
             <li><a href="#experience">Experiencia</a></li>

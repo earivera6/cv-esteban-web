@@ -285,3 +285,22 @@ section p {
 .contact-card a:hover {
   text-decoration: underline;
 }
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+}
+
+.nav-brand-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-logo {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}

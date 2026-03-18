@@ -141,3 +141,18 @@ section p {
 #contact p {
   margin-bottom: 8px;
 }
+
+.pdf-button {
+  display: inline-block;
+  background-color: #0f172a;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.pdf-button:hover {
+  background-color: #1e293b;
+  transform: translateY(-2px);
+}

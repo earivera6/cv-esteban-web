@@ -16,10 +16,13 @@ function App() {
 
       <main>
         <section id="hero">
-          <h2>Software Engineer (Frontend)</h2>
+          <p>Portafolio profesional</p>
+          <h2>Esteban Andrés Rivera Novillo</h2>
+          <h3>Software Engineer (Frontend)</h3>
           <p>
-            Ingeniero en Electrónica y Automatización especializado en React y
-            TypeScript. Disponible para trabajo remoto.
+            Ingeniero en Electrónica y Automatización especializado en React,
+            TypeScript y desarrollo web moderno. Este sitio reúne mi perfil,
+            habilidades técnicas y proyectos.
           </p>
           <a href="#contact">Contactar</a>
         </section>
@@ -71,7 +74,12 @@ function App() {
           <p>Email: estebanrivera200039@gmail.com</p>
           <p>Teléfono: 0995085634</p>
           <p>
-            <a href="/cv-esteban-web/Brand/CV.pdf" target="_blank" rel="noreferrer">
+            <a 
+              href="/cv-esteban-web/Brand/CV.pdf" 
+              target="_blank" 
+              rel="noreferrer"
+              className="pdf-button"
+            >
               Ver CV en PDF
             </a>
           </p>

@@ -132,7 +132,16 @@ function App() {
                 rel="noreferrer"
                 className="btn btn-dark"
               >
-                LinkedIn
+                Mi LinkedIn
+              </a>
+
+              <a
+                href="https://github.com/earivera6/cv-esteban-web"
+                target="_blank"
+                rel="noreferrer"
+                className="btn btn-dark"
+              >
+                Mi GitHub
               </a>
             </div>
           </div>

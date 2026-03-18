@@ -1,73 +1,54 @@
-# React + TypeScript + Vite
+# Esteban Andrés Rivera Novillo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Portafolio Web Profesional
 
-Currently, two official plugins are available:
+Sitio web personal desarrollado para presentar mi perfil profesional, experiencia, habilidades técnicas y portafolio de proyectos en programación, automatización y desarrollo técnico.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Vista del sitio
+🔗 **Demo en línea:**  
+[Ver portafolio web](https://earivera6.github.io/cv-esteban-web/)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Sobre mí
 
-## Expanding the ESLint configuration
+Soy Ingeniero en Electrónica y Automatización con enfoque en desarrollo de software, especialmente en tecnologías frontend. Me interesa construir soluciones funcionales, claras y bien estructuradas, integrando programación, automatización y desarrollo técnico.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Actualmente utilizo este sitio como una vitrina profesional para mostrar:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Mi perfil y experiencia
+- Mis habilidades técnicas
+- Mi formación académica
+- Mi CV en PDF
+- Proyectos que evidencian mis capacidades
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Tecnologías usadas
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- React
+- TypeScript
+- Vite
+- CSS
+- Git
+- GitHub Pages
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Secciones del sitio
+
+- **Perfil**
+- **Experiencia profesional**
+- **Habilidades técnicas**
+- **Educación**
+- **Contacto**
+- **Portafolio de proyectos** *(próximamente)*
+
+---
+
+## Captura del proyecto
+
+Puedes agregar aquí una imagen de preview del sitio:
+
+```md
+![Preview del portafolio](./public/Brand/preview.png)

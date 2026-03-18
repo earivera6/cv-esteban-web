@@ -24,7 +24,18 @@ function App() {
             TypeScript y desarrollo web moderno. Este sitio reúne mi perfil,
             habilidades técnicas y proyectos.
           </p>
-          <a href="#contact">Contactar</a>
+          
+          <div className="button-group">
+            <a href="#contact" className="btn btn-light">Contactar</a>
+            <a
+              href="/cv-esteban-web/Brand/CV.pdf"
+              target="_blank"
+              rel="noreferrer"
+              className="btn btn-dark"
+            >
+              Ver CV en PDF
+            </a>
+          </div>
         </section>
 
         <section id="about">
@@ -40,49 +51,91 @@ function App() {
         <section id="experience">
           <h2>Experiencia Profesional</h2>
 
-          <h3>Operador de Mantenimiento</h3>
-          <p><strong>Rhelec Ingeniería Cía. Ltda.</strong></p>
-          <p>Diciembre 2023 – Noviembre 2024 · Sangolquí, Ecuador</p>
+          <div className="experience-card">
+            <h3>Operador de Mantenimiento</h3>
+            <p className="experience-company">Rhelec Ingeniería Cía. Ltda.</p>
+            <p className="experience-meta">
+              Diciembre 2023 – Noviembre 2024 · Sangolquí, Ecuador
+            </p>
 
-          <ul>
-            <li>Mantenimiento eléctrico de media y baja tensión.</li>
-            <li>Supervisión de grupos electrógenos y tableros.</li>
-            <li>Gestión de alarmas y coordinación técnica.</li>
-          </ul>
+            <ul className="experience-list">
+              <li>Mantenimiento eléctrico de media y baja tensión.</li>
+              <li>Supervisión de grupos electrógenos y tableros.</li>
+              <li>Gestión de alarmas y coordinación técnica.</li>
+            </ul>
+          </div>
         </section>
 
         <section id="skills">
           <h2>Habilidades Técnicas</h2>
-          <ul>
-            <li>React</li>
-            <li>TypeScript</li>
-            <li>JavaScript</li>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>Git & GitHub</li>
-          </ul>
+
+          <div className="skills-group">
+            <span className="skill-tag">React</span>
+            <span className="skill-tag">TypeScript</span>
+            <span className="skill-tag">JavaScript</span>
+            <span className="skill-tag">HTML5</span>
+            <span className="skill-tag">CSS3</span>
+            <span className="skill-tag">Git & GitHub</span>
+          </div>
         </section>
 
         <section id="education">
           <h2>Educación</h2>
-          <h3>Ingeniería en Electrónica y Automatización</h3>
-          <p>Universidad de las Fuerzas Armadas – ESPE · Quito, Ecuador</p>
+
+          <div className="education-card">
+            <h3>Ingeniería en Electrónica y Automatización</h3>
+            <p className="education-company">
+              Universidad de las Fuerzas Armadas – ESPE
+            </p>
+            <p className="education-meta">Quito, Ecuador</p>
+          </div>
         </section>
 
         <section id="contact">
           <h2>Contacto</h2>
-          <p>Email: estebanrivera200039@gmail.com</p>
-          <p>Teléfono: 0995085634</p>
-          <p>
-            <a 
-              href="/cv-esteban-web/Brand/CV.pdf" 
-              target="_blank" 
-              rel="noreferrer"
-              className="pdf-button"
-            >
-              Ver CV en PDF
-            </a>
-          </p>
+
+          <div className="contact-card">
+            <p>
+              <strong>Email:</strong>{" "}
+              <a href="mailto:estebanrivera200039@gmail.com">
+                estebanrivera200039@gmail.com
+              </a>
+            </p>
+
+            <p>
+              <strong>Teléfono:</strong>{" "}
+              <a href="tel:+593995085634">+593 99 508 5634</a>
+            </p>
+
+            <div className="button-group">
+              <a
+                href="https://wa.me/593995085634"
+                target="_blank"
+                rel="noreferrer"
+                className="btn btn-dark"
+              >
+                Escribirme por WhatsApp
+              </a>
+
+              <a
+                href="/cv-esteban-web/Brand/CV.pdf"
+                target="_blank"
+                rel="noreferrer"
+                className="btn btn-dark"
+              >
+                Ver CV en PDF
+              </a>
+
+              <a
+                href="http://www.linkedin.com/in/estebanriveran"
+                target="_blank"
+                rel="noreferrer"
+                className="btn btn-dark"
+              >
+                LinkedIn
+              </a>
+            </div>
+          </div>
         </section>
       </main>
     </div>

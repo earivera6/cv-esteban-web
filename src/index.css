@@ -142,17 +142,146 @@ section p {
   margin-bottom: 8px;
 }
 
-.pdf-button {
+.button-group {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.btn {
   display: inline-block;
-  background-color: #0f172a;
-  color: white;
   padding: 12px 18px;
   border-radius: 10px;
   font-weight: bold;
+  text-decoration: none;
   transition: 0.3s ease;
 }
 
-.pdf-button:hover {
-  background-color: #1e293b;
+.btn:hover {
   transform: translateY(-2px);
+}
+
+/* Botón oscuro */
+.btn-dark {
+  background-color: #0f172a;
+  color: white;
+}
+
+.btn-dark:hover {
+  background-color: #1e293b;
+  color: white;
+}
+
+/* Botón claro */
+.btn-light {
+  background-color: #38bdf8;
+  color: #0f172a;
+}
+
+.btn-light:hover {
+  background-color: #7dd3fc;
+  color: #0f172a;
+}
+
+.experience-card {
+  margin-top: 20px;
+  padding: 24px;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  background-color: #f8fafc;
+}
+
+.experience-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #0f172a;
+}
+
+.experience-company {
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: #1e293b;
+}
+
+.experience-meta {
+  font-size: 0.95rem;
+  color: #64748b;
+  margin-bottom: 16px;
+}
+
+.experience-list {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.experience-list li {
+  margin-bottom: 8px;
+}
+
+.skills-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.skill-tag {
+  display: inline-block;
+  background-color: #e2e8f0;
+  color: #0f172a;
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.education-card {
+  margin-top: 20px;
+  padding: 24px;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  background-color: #f8fafc;
+}
+
+.education-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #0f172a;
+}
+
+.education-company {
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: #1e293b;
+}
+
+.education-meta {
+  font-size: 0.95rem;
+  color: #64748b;
+}
+
+.contact-card {
+  margin-top: 20px;
+  padding: 24px;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  background-color: #f8fafc;
+}
+
+.contact-card p {
+  margin-bottom: 12px;
+}
+
+.contact-card a:not(.btn) {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.contact-card a:not(.btn):hover {
+  text-decoration: underline;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
 }

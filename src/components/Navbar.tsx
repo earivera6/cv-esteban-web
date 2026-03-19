@@ -14,17 +14,17 @@ function Navbar() {
   };
 
   return (
-    <header>
-      <nav>
+    <header className="site-header">
+      <nav className="navbar">
         <div className="nav-brand">
-          <Link to="/" className="nav-brand-link">
+          <a href={import.meta.env.BASE_URL}className="nav-brand-link">
             <img
               src={`${base}Brand/logo_dark.png`}
               alt="Logo Esteban Rivera"
               className="nav-logo"
             />
             <h1>Esteban Rivera</h1>
-          </Link>
+          </a>
         </div>
 
         <button
@@ -37,11 +37,11 @@ function Navbar() {
         </button>
 
         <ul className="nav-menu">
-          <li><a href={`${base}#about`} className="btn btn-dark" onMouseLeave={() => setShowProjectsMenu(false)}>Sobre mí</a></li>
-          <li><a href={`${base}#experience`} className="btn btn-dark" onMouseLeave={() => setShowProjectsMenu(false)}>Experiencia</a></li>
-          <li><a href={`${base}#skills`} className="btn btn-dark" onMouseLeave={() => setShowProjectsMenu(false)}>Habilidades</a></li>
-          <li><a href={`${base}#education`} className="btn btn-dark" onMouseLeave={() => setShowProjectsMenu(false)}>Educación</a></li>
-          <li><a href={`${base}#contact`} className="btn btn-dark" onMouseLeave={() => setShowProjectsMenu(false)}>Contacto</a></li>
+          <li><a href={`${import.meta.env.BASE_URL}#about`} className="btn btn-dark" onMouseLeave={() => setShowProjectsMenu(false)}>Sobre mí</a></li>
+          <li><a href={`${import.meta.env.BASE_URL}#experience`} className="btn btn-dark" onMouseLeave={() => setShowProjectsMenu(false)}>Experiencia</a></li>
+          <li><a href={`${import.meta.env.BASE_URL}#skills`} className="btn btn-dark" onMouseLeave={() => setShowProjectsMenu(false)}>Habilidades</a></li>
+          <li><a href={`${import.meta.env.BASE_URL}#education`} className="btn btn-dark" onMouseLeave={() => setShowProjectsMenu(false)}>Educación</a></li>
+          <li><a href={`${import.meta.env.BASE_URL}#contact`} className="btn btn-dark" onMouseLeave={() => setShowProjectsMenu(false)}>Contacto</a></li>
 
           <li
             className="projects-dropdown"

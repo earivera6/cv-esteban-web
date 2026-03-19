@@ -59,9 +59,9 @@ nav a {
 }
 
 main {
-  width: min(1100px, 90%);
+  width: min(1100px, 100%);
   margin: 0 auto;
-  padding: 40px 0;
+  padding: 20px 0 40px;
 }
 
 section {
@@ -370,6 +370,8 @@ section p {
 .site-header {
   position: sticky;
   top: 0;
+  left: 0;
+  width: 100%;
   z-index: 1000;
   background-color: #0f172a;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
@@ -382,7 +384,7 @@ section p {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  padding: 20px 0;
+  padding: 1px 0;
 }
 
 .nav-menu {
@@ -543,6 +545,9 @@ section p {
 
   .menu-toggle {
     display: block;
+    position: static;
+    align-items: flex-end;
+    
   }
 
   .projects-megamenu {

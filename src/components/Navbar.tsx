@@ -117,16 +117,16 @@ function Navbar() {
 
           {showMobileProjectsMenu && (
             <div className="mobile-projects-list">
-              <Link to="/projects" onClick={closeMobileMenu}>
+              <Link to="/projects" onClick={closeMobileMenu} className="btn btn-dark">
                 Todos los proyectos
               </Link>
-              <a href={`${base}projects#programacion`} onClick={closeMobileMenu}>
+              <a href={`${base}projects#programacion`} onClick={closeMobileMenu} className="btn btn-light">
                 Programación
               </a>
-              <a href={`${base}projects#diseno-3d`} onClick={closeMobileMenu}>
+              <a href={`${base}projects#diseno-3d`} onClick={closeMobileMenu} className="btn btn-light">
                 Diseño 3D
               </a>
-              <a href={`${base}projects#automatizacion`} onClick={closeMobileMenu}>
+              <a href={`${base}projects#automatizacion`} onClick={closeMobileMenu} className="btn btn-light">
                 Automatización
               </a>
             </div>

@@ -320,7 +320,42 @@ section p {
   font-weight: bold;
 }
 
+.hero-layout {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 32px;
+  align-items: center;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+  border: 4px solid white;
+}
+
 @media (max-width: 768px) {
+  .hero-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-image {
+    order: -1;
+  }
+
+  .hero-image img {
+    width: 220px;
+    height: 220px;
+  }
+
   nav {
     flex-direction: column;
     align-items: flex-start;

@@ -1,12 +1,12 @@
 function Profile() {
   return (
-    <section style={{ marginBottom: "1.5rem" }}>
+    <section id="about">
       <h2>Perfil</h2>
       <p>
-        Ingeniero en Electrónica y Automatización con experiencia en
-        mantenimiento preventivo y correctivo, automatización industrial y
-        energías renovables. Enfocado en soluciones técnicas claras, ordenadas
-        y orientadas a la mejora continua.
+        Profesional con formación en ingeniería y fuerte orientación al
+        desarrollo de software, con experiencia en mantenimiento industrial y
+        enseñanza técnica, enfocado actualmente en desarrollo web moderno y
+        tecnologías frontend.
       </p>
     </section>
   );

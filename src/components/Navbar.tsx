@@ -117,13 +117,13 @@ function Navbar() {
         <a href={`${base}#contact`} onClick={closeMobileMenu} type="button" className="btn btn-dark">{t("nav.contact")}</a>
 
         <div className="mobile-projects">
-          <button
+          <a
             type="button"
             className="btn btn-dark"
             onClick={() => setShowMobileProjectsMenu((prev) => !prev)}
           >
-            {t("nav.projects")} ▼
-          </button>
+            {t("nav.projects")}
+          </a>
 
           {showMobileProjectsMenu && (
             <div className="mobile-projects-list">

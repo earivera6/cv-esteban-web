@@ -1,12 +1,6 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 
 function ProjectsPage() {
-  const [showProjectsMenu, setShowProjectsMenu] = useState(false);
-  const [showMobileMenu, setShowMobileMenu] = useState(false);
-  const [showMobileProjectsMenu, setShowMobileProjectsMenu] = useState(false);
-  const base = import.meta.env.BASE_URL;
   return (
     <div>
       <Navbar />
@@ -19,7 +13,7 @@ function ProjectsPage() {
           </p>
 
           <div className="button-group">
-            <a href={import.meta.env.BASE_URL} className="nav-brand-link">
+            <a href={import.meta.env.BASE_URL} className="btn btn-dark">
               Volver al inicio
             </a>
           </div>

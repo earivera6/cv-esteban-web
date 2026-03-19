@@ -108,36 +108,47 @@
   },
   "certifications": {
     "title": "Featured Certifications",
+    "viewCertificate": "View certificate",
     "items": [
         {
         "name": "Expert Program in Agile Project Management",
         "issuer": "Professional Certification",
         "date": "Mar 2026",
-        "details": "Scrum, Kanban, Design Thinking, KPI and OKR, MS Project, and advanced custom charts · 27 hours"
+        "details": "Scrum, Kanban, Design Thinking, KPI and OKR, MS Project, and advanced custom charts · 27 hours",
+        "pdf": "/certificates/agile.pdf",
+        "preview": "/certificates/agile-preview.png"
         },
         {
         "name": "Power BI for Innovators: Explore the Power of Your Data",
         "issuer": "ConQuito",
         "date": "Oct 2024",
-        "details": "Approved virtual workshop · 28 hours"
+        "details": "Approved virtual workshop · 28 hours",
+        "pdf": "/certificates/powerbi.pdf",
+        "preview": "/certificates/powerbi-preview.png"
         },
         {
         "name": "4KW Solar Panels: Design, Installation, and Maintenance",
         "issuer": "Ministry of Labor",
         "date": "Nov 2024",
-        "details": "Blended continuous training · 16 hours"
+        "details": "Blended continuous training · 16 hours",
+        "pdf": "/certificates/solar.pdf",
+        "preview": "/certificates/solar-preview.png"
         },
         {
         "name": "Prompt Engineering: Learn to Talk to Generative AI",
         "issuer": "LinkedIn Learning",
         "date": "Apr 2025",
-        "details": "Completed course focused on generative artificial intelligence"
+        "details": "Completed course focused on generative artificial intelligence",
+        "pdf": "/certificates/prompt-engineering.pdf",
+        "preview": "/certificates/prompt-engineering-preview.png"
         },
         {
         "name": "Edge AI",
         "issuer": "Edge Impulse",
         "date": "Mar 2025",
-        "details": "Completed course on Edge AI fundamentals and applications"
+        "details": "Completed course on Edge AI fundamentals and applications",
+        "pdf": "/certificates/edge-ai.pdf",
+        "preview": "/certificates/edge-ai-preview.png"
         }
     ]
   }

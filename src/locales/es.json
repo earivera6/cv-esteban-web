@@ -105,36 +105,47 @@
   },
   "certifications": {
     "title": "Certificaciones Destacadas",
+    "viewCertificate": "Ver certificado",
     "items": [
         {
         "name": "Programa Experto en Gestión Ágil de Proyectos",
         "issuer": "Certificación profesional",
         "date": "Mar 2026",
-        "details": "Scrum, Kanban, Design Thinking, KPI y OKR, MS Project y gráficos personalizados avanzados · 27 horas"
+        "details": "Scrum, Kanban, Design Thinking, KPI y OKR, MS Project y gráficos personalizados avanzados · 27 horas",
+        "pdf": "/certificates/agile.pdf",
+        "preview": "/certificates/agile-preview.png"
         },
         {
         "name": "Power BI para innovadores: Explora el poder de tus datos",
         "issuer": "ConQuito",
         "date": "Oct 2024",
-        "details": "Taller aprobado en modalidad virtual · 28 horas"
+        "details": "Taller aprobado en modalidad virtual · 28 horas",
+        "pdf": "/certificates/powerbi.pdf",
+        "preview": "/certificates/powerbi-preview.png"
         },
         {
         "name": "Paneles Solares 4KW: Diseño, Instalación y Mantenimiento",
         "issuer": "Ministerio del Trabajo",
         "date": "Nov 2024",
-        "details": "Capacitación continua semipresencial · 16 horas"
+        "details": "Capacitación continua semipresencial · 16 horas",
+        "pdf": "/certificates/solar.pdf",
+        "preview": "/certificates/solar-preview.png"
         },
         {
         "name": "Prompt Engineering: Aprende a hablar con una inteligencia artificial generativa",
         "issuer": "LinkedIn Learning",
         "date": "Abr 2025",
-        "details": "Curso completado enfocado en inteligencia artificial generativa"
+        "details": "Curso completado enfocado en inteligencia artificial generativa",
+        "pdf": "/certificates/prompt-engineering.pdf",
+        "preview": "/certificates/prompt-engineering-preview.png"
         },
         {
         "name": "Edge AI",
         "issuer": "Edge Impulse",
         "date": "Mar 2025",
-        "details": "Curso completado sobre fundamentos y aplicación de Edge AI"
+        "details": "Curso completado sobre fundamentos y aplicación de Edge AI",
+        "pdf": "/certificates/edge-ai.pdf",
+        "preview": "/certificates/edge-ai-preview.png"
         }
     ]
   }

@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 
 function ProjectsPage() {
+  const [showProjectsMenu, setShowProjectsMenu] = useState(false);
+  const [showMobileMenu, setShowMobileMenu] = useState(false);
+  const [showMobileProjectsMenu, setShowMobileProjectsMenu] = useState(false);
   const base = import.meta.env.BASE_URL;
   return (
     <div>

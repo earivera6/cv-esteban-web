@@ -1,32 +1,36 @@
+import { useTranslation } from "react-i18next";
+
 function Experience() {
+  const { t } = useTranslation();
+
   return (
     <section id="experience">
-      <h2>Experiencia Profesional</h2>
+      <h2>{t("experience.title")}</h2>
 
       <div className="experience-card">
-        <h3>Operador de Mantenimiento</h3>
-        <p className="experience-company">Rhelec Ingeniería Cía. Ltda.</p>
+        <h3>{t("experience.jobs.rhelec.role")}</h3>
+        <p className="experience-company">{t("experience.jobs.rhelec.company")}</p>
         <p className="experience-meta">
-          Diciembre 2023 – Noviembre 2024 · Sangolquí, Ecuador
+          {t("experience.jobs.rhelec.period")} · {t("experience.jobs.rhelec.location")}
         </p>
 
         <ul className="experience-list">
-          <li>Mantenimiento eléctrico de media y baja tensión.</li>
-          <li>Supervisión de grupos electrógenos y tableros.</li>
-          <li>Gestión de alarmas y coordinación técnica.</li>
+          <li>{t("experience.jobs.rhelec.bullets.0")}</li>
+          <li>{t("experience.jobs.rhelec.bullets.1")}</li>
+          <li>{t("experience.jobs.rhelec.bullets.2")}</li>
         </ul>
       </div>
 
       <div className="experience-card">
-        <h3>Capacitador Académico</h3>
-        <p className="experience-company">Club de Entrenamiento Cerebral (CEC)</p>
+        <h3>{t("experience.jobs.cec.role")}</h3>
+        <p className="experience-company">{t("experience.jobs.cec.company")}</p>
         <p className="experience-meta">
-          Febrero 2019 – Diciembre 2023 · Quito, Ecuador
+          {t("experience.jobs.cec.period")} · {t("experience.jobs.cec.location")}
         </p>
 
         <ul className="experience-list">
-          <li>Tutorías de Matemáticas y Física para estudiantes de bachillerato.</li>
-          <li>Diseño de talleres de robótica educativa para niños y jóvenes.</li>
+          <li>{t("experience.jobs.cec.bullets.0")}</li>
+          <li>{t("experience.jobs.cec.bullets.1")}</li>
         </ul>
       </div>
     </section>

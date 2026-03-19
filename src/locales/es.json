@@ -16,8 +16,40 @@
     "label": "Portafolio profesional",
     "name": "Esteban Andrés Rivera Novillo",
     "title": "Software Developer | Technical Operations, Automation & Electronics",
-    "description": "Ingeniero en Electrónica y Automatización con experiencia en operaciones técnicas, soporte, mantenimiento y desarrollo de software, enfocado en React, TypeScript y soluciones digitales orientadas a automatización, eficiencia y resolución de problemas.",
+    "description": "Ingeniero en Electrónica y Automatización con experiencia en operaciones técnicas, soporte, mantenimiento y desarrollo de software, enfocado en React, TypeScript y soluciones digitales orientadas a eficiencia, automatización, análisis y resolución de problemas.",
     "contact": "Contactar",
     "cv": "Ver CV en PDF"
+  },
+  "profile": {
+    "title": "Perfil",
+    "description": "Profesional con base en electrónica y automatización, experiencia en mantenimiento técnico, seguimiento operativo, capacitación académica y desarrollo de soluciones digitales, combino visión de software, operaciones y electrónica para resolver problemas, optimizar procesos y construir herramientas útiles en entornos técnicos y de negocio."
+  },
+  "experience": {
+    "title": "Experiencia",
+    "jobs": {
+        "rhelec": {
+        "role": "Operador de Mantenimiento / Soporte Técnico Operativo",
+        "company": "Rhelec Ingeniería Cía. Ltda.",
+        "location": "Sangolquí, Ecuador",
+        "period": "Dic 2023 – Nov 2024",
+        "bullets": [
+            "Seguimiento de mantenimientos preventivos y correctivos en sistemas de baja y media tensión, planta de poder, banco de baterías, grupos electrógenos y equipos asociados.",
+            "Elaboración de informes técnicos y apoyo en la planificación de mantenimientos preventivos.",
+            "Atención y soporte en centro de atención telefónica técnica para incidencias operativas.",
+            "Coordinación y seguimiento de alarmas e intervenciones en equipos de telecomunicación, microonda y aire acondicionado."
+            ]
+        },
+        "cec": {
+        "role": "Capacitador Académico",
+        "company": "Club de Entrenamiento Cerebral (CEC)",
+        "location": "Quito, Ecuador",
+        "period": "Feb 2019 – Dic 2023",
+        "bullets": [
+            "Tutoría en Matemáticas y Física para estudiantes de primaria y bachillerato.",
+            "Diseño e impartición de talleres de robótica educativa para niños y jóvenes.",
+            "Desarrollo de habilidades de comunicación, estructuración de contenidos y acompañamiento personalizado."
+            ]
+        }
+    }
   }
 }

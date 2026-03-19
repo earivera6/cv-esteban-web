@@ -12,12 +12,47 @@
     "design3d": "3D Design",
     "automation": "Automation"
   },
+
   "hero": {
     "label": "Professional portfolio",
     "name": "Esteban Andrés Rivera Novillo",
     "title": "Software Developer | Technical Operations, Automation & Electronics",
-    "description": "Electronics and Automation Engineer with experience in technical operations, support, maintenance, and software development. Focused on React, TypeScript, and digital solutions oriented to automation, efficiency, and problem solving.",
+    "description": "Electronics and Automation Engineer with experience in technical operations, support, maintenance, and software development. Focused on React, TypeScript, automation, and digital solutions oriented to efficiency, analysis, and problem solving.",
     "contact": "Contact",
     "cv": "View PDF Resume"
+  },
+
+  "profile": {
+    "title": "Profile",
+    "description": "Professional with a background in electronics and automation, with experience in technical maintenance, operational follow-up, academic instruction, and digital solution development. I combine software, operations, and electronics perspectives to solve problems, optimize processes, and build useful tools for technical and business environments."
+  },
+
+  "experience": {
+    "title": "Experience",
+    "jobs": {
+        "rhelec": {
+        "role": "Maintenance Operator / Technical Operations Support",
+        "company": "Rhelec Ingeniería Cía. Ltda.",
+        "location": "Sangolquí, Ecuador",
+        "period": "Dec 2023 – Nov 2024",
+        "bullets": [
+            "Follow-up of preventive and corrective maintenance activities in low- and medium-voltage systems, power plant equipment, battery banks, generator sets, and related systems.",
+            "Preparation of technical reports and support in preventive maintenance planning.",
+            "Technical phone support and incident assistance in an operations support environment.",
+            "Coordination and monitoring of alarms and interventions related to telecommunications equipment, microwave systems, and air conditioning units."
+        ]
+        },
+        "cec": {
+        "role": "Academic Instructor",
+        "company": "Club de Entrenamiento Cerebral (CEC)",
+        "location": "Quito, Ecuador",
+        "period": "Feb 2019 – Dec 2023",
+        "bullets": [
+            "Tutoring in Mathematics and Physics for primary and high school students.",
+            "Design and delivery of educational robotics workshops for children and teenagers.",
+            "Development of communication, content structuring, and personalized guidance skills."
+        ]
+        }
+    }
   }
 }

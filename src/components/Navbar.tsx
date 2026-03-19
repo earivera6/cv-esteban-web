@@ -3,7 +3,15 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   const [showProjectsMenu, setShowProjectsMenu] = useState(false);
+  const [showMobileMenu, setShowMobileMenu] = useState(false);
+  const [showMobileProjectsMenu, setShowMobileProjectsMenu] = useState(false);
   const base = import.meta.env.BASE_URL;
+
+  const closeMobileMenu = () => {
+    setShowMobileMenu(false);
+    setShowMobileProjectsMenu(false);
+    setShowProjectsMenu(false);
+  };
 
   return (
     <header>
@@ -18,6 +26,15 @@ function Navbar() {
             <h1>Esteban Rivera</h1>
           </Link>
         </div>
+
+        <button
+          type="button"
+          className="menu-toggle"
+          onClick={() => setShowMobileMenu(true)}
+          aria-label="Abrir menú"
+        >
+          ☰
+        </button>
 
         <ul className="nav-menu">
           <li><a href={`${base}#about`} className="btn btn-dark" onMouseLeave={() => setShowProjectsMenu(false)}>Sobre mí</a></li>
@@ -39,6 +56,7 @@ function Navbar() {
                 type="button"
                 className="projects-toggle"
                 onClick={() => setShowProjectsMenu((prev) => !prev)}
+                aria-label="Abrir submenú de proyectos"
               >
                 ▼
               </button>
@@ -65,6 +83,56 @@ function Navbar() {
           </li>
         </ul>
       </nav>
+
+      <div
+        className={`mobile-overlay ${showMobileMenu ? "show" : ""}`}
+        onClick={closeMobileMenu}
+      ></div>
+
+      <aside className={`mobile-sidebar ${showMobileMenu ? "open" : ""}`}>
+        <button
+          type="button"
+          className="mobile-close"
+          onClick={closeMobileMenu}
+          aria-label="Cerrar menú"
+        >
+          ×
+        </button>
+
+        <a href={`${base}`} onClick={closeMobileMenu}>Inicio</a>
+        <a href={`${base}#about`} onClick={closeMobileMenu}>Sobre mí</a>
+        <a href={`${base}#experience`} onClick={closeMobileMenu}>Experiencia</a>
+        <a href={`${base}#skills`} onClick={closeMobileMenu}>Habilidades</a>
+        <a href={`${base}#education`} onClick={closeMobileMenu}>Educación</a>
+        <a href={`${base}#contact`} onClick={closeMobileMenu}>Contacto</a>
+
+        <div className="mobile-projects">
+          <button
+            type="button"
+            className="mobile-projects-toggle"
+            onClick={() => setShowMobileProjectsMenu((prev) => !prev)}
+          >
+            Proyectos ▼
+          </button>
+
+          {showMobileProjectsMenu && (
+            <div className="mobile-projects-list">
+              <Link to="/projects" onClick={closeMobileMenu}>
+                Todos los proyectos
+              </Link>
+              <a href={`${base}projects#programacion`} onClick={closeMobileMenu}>
+                Programación
+              </a>
+              <a href={`${base}projects#diseno-3d`} onClick={closeMobileMenu}>
+                Diseño 3D
+              </a>
+              <a href={`${base}projects#automatizacion`} onClick={closeMobileMenu}>
+                Automatización
+              </a>
+            </div>
+          )}
+        </div>
+      </aside>
     </header>
   );
 }

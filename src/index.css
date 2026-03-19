@@ -367,10 +367,37 @@ section p {
   color: #475569;
 }
 
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #0f172a;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+.navbar {
+  width: min(1100px, 90%);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+
 .nav-menu {
   display: flex;
   gap: 20px;
   align-items: center;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
 }
 
 .projects-dropdown {
@@ -436,7 +463,88 @@ section p {
   line-height: 1.5;
 }
 
+.mobile-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.45);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.25s ease;
+  z-index: 998;
+}
+
+.mobile-overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.mobile-sidebar {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 280px;
+  height: 100vh;
+  background: #0f172a;
+  color: white;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: 0.3s ease;
+  z-index: 999;
+}
+
+.mobile-sidebar.open {
+  left: 0;
+}
+
+.mobile-sidebar a {
+  color: white;
+  font-weight: 500;
+}
+
+.mobile-close {
+  align-self: flex-end;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.mobile-projects-toggle {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  color: white;
+  font: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0;
+}
+
+.mobile-projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+  padding-left: 12px;
+}
+
+.mobile-projects-list a {
+  color: #cbd5e1;
+}
+
 @media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
   .projects-megamenu {
     position: static;
     width: 100%;

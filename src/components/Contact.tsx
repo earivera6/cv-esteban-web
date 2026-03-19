@@ -5,6 +5,10 @@ function Contact() {
 
         <div className="contact-card">
             <p>
+            <strong>Quito, Ecuador</strong>{" "}
+            </p>
+            
+            <p>
             <strong>Email:</strong>{" "}
             <a href="mailto:estebanrivera200039@gmail.com">
                 estebanrivera200039@gmail.com

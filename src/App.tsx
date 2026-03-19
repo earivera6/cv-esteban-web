@@ -1,28 +1,13 @@
-import Contact from "./components/Contact";
-import Education from "./components/Education";
-import Experience from "./components/Experience";
-import Hero from "./components/Hero";
-import Languages from "./components/Languages";
-import Navbar from "./components/Navbar";
-import Profile from "./components/Profile";
-import Skills from "./components/Skills";
-import SoftSkills from "./components/SoftSkills";
+import { Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import ProjectsPage from "./pages/ProjectsPage";
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <main>
-        <Hero />
-        <Profile />
-        <Experience />
-        <Skills />
-        <SoftSkills />
-        <Education />
-        <Languages />
-        <Contact />
-      </main>
-    </div>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/projects" element={<ProjectsPage />} />
+    </Routes>
   );
 }
 

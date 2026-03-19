@@ -14,9 +14,9 @@ function ProjectsPage() {
           </p>
 
           <div className="button-group">
-            <Link to="/" className="btn btn-dark">
+            <a href={import.meta.env.BASE_URL}className="nav-brand-link">
               Volver al inicio
-            </Link>
+            </a>
           </div>
         </section>
 

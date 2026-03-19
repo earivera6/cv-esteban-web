@@ -16,7 +16,7 @@ function ProjectsPage() {
           </p>
 
           <div className="button-group">
-            <a href={import.meta.env.BASE_URL}className="nav-brand-link">
+            <a href={import.meta.env.BASE_URL} className="nav-brand-link">
               Volver al inicio
             </a>
           </div>

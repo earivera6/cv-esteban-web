@@ -35,6 +35,7 @@
         "company": "Rhelec Ingeniería Cía. Ltda.",
         "location": "Sangolquí, Ecuador",
         "period": "Dec 2023 – Nov 2024",
+        "modality": "Engagement type: service-based",
         "bullets": [
             "Follow-up of preventive and corrective maintenance activities in low- and medium-voltage systems, power plant equipment, battery banks, generator sets, and related systems.",
             "Preparation of technical reports and support in preventive maintenance planning.",
@@ -47,6 +48,7 @@
         "company": "Club de Entrenamiento Cerebral (CEC)",
         "location": "Quito, Ecuador",
         "period": "Feb 2019 – Dec 2023",
+        "modality": "Engagement type: service-based",
         "bullets": [
             "Tutoring in Mathematics and Physics for primary and high school students.",
             "Design and delivery of educational robotics workshops for children and teenagers.",
@@ -54,5 +56,89 @@
         ]
         }
     }
+  },
+  "skills": {
+    "title": "Technical Skills",
+    "groups": {
+        "software": {
+        "title": "Software & Web",
+        "items": [
+            "React",
+            "TypeScript",
+            "JavaScript",
+            "HTML5",
+            "CSS3",
+            "Git & GitHub"
+        ]
+        },
+        "data": {
+        "title": "Data & Tools",
+        "items": [
+            "Power BI",
+            "Advanced Excel",
+            "MS Project",
+            "MySQL"
+        ]
+        },
+        "automation": {
+        "title": "Automation & Electronics",
+        "items": [
+            "TIA Portal",
+            "AutoCAD",
+            "EPLAN",
+            "Industrial maintenance",
+            "Automation",
+            "Renewable energy"
+        ]
+        }
+    }
+  },
+  "softSkills": {
+    "title": "Soft Skills",
+    "items": [
+        "Effective communication",
+        "Teamwork",
+        "Problem solving",
+        "Analytical thinking",
+        "Adaptability",
+        "Continuous learning",
+        "Organization",
+        "Responsibility"
+    ]
+  },
+  "certifications": {
+    "title": "Featured Certifications",
+    "items": [
+        {
+        "name": "Expert Program in Agile Project Management",
+        "issuer": "Professional Certification",
+        "date": "Mar 2026",
+        "details": "Scrum, Kanban, Design Thinking, KPI and OKR, MS Project, and advanced custom charts · 27 hours"
+        },
+        {
+        "name": "Power BI for Innovators: Explore the Power of Your Data",
+        "issuer": "ConQuito",
+        "date": "Oct 2024",
+        "details": "Approved virtual workshop · 28 hours"
+        },
+        {
+        "name": "4KW Solar Panels: Design, Installation, and Maintenance",
+        "issuer": "Ministry of Labor",
+        "date": "Nov 2024",
+        "details": "Blended continuous training · 16 hours"
+        },
+        {
+        "name": "Prompt Engineering: Learn to Talk to Generative AI",
+        "issuer": "LinkedIn Learning",
+        "date": "Apr 2025",
+        "details": "Completed course focused on generative artificial intelligence"
+        },
+        {
+        "name": "Edge AI",
+        "issuer": "Edge Impulse",
+        "date": "Mar 2025",
+        "details": "Completed course on Edge AI fundamentals and applications"
+        }
+    ]
   }
 }

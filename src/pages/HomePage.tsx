@@ -8,6 +8,7 @@ import Projects from "../components/Projects";
 import Education from "../components/Education";
 import Languages from "../components/Languages";
 import Contact from "../components/Contact";
+import Certifications from "../components/Certifications";
 
 function HomePage() {
   return (
@@ -19,6 +20,7 @@ function HomePage() {
         <Experience />
         <Skills />
         <SoftSkills />
+        <Certifications />
         <Projects />
         <Education />
         <Languages />

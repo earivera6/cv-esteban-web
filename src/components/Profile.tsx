@@ -1,12 +1,13 @@
+import { useTranslation } from "react-i18next";
+
 function Profile() {
+  const { t } = useTranslation();
+
   return (
     <section id="about">
-      <h2>Perfil</h2>
+      <h2>{t("profile.title")}</h2>
       <p>
-        Profesional con formación en ingeniería y fuerte orientación al
-        desarrollo de software, con experiencia en mantenimiento industrial y
-        enseñanza técnica, enfocado actualmente en desarrollo web moderno y
-        tecnologías frontend.
+        {t("profile.description")}
       </p>
     </section>
   );

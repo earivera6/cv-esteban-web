@@ -32,6 +32,7 @@
         "company": "Rhelec Ingeniería Cía. Ltda.",
         "location": "Sangolquí, Ecuador",
         "period": "Dic 2023 – Nov 2024",
+        "modality": "Modalidad: prestación de servicios",
         "bullets": [
             "Seguimiento de mantenimientos preventivos y correctivos en sistemas de baja y media tensión, planta de poder, banco de baterías, grupos electrógenos y equipos asociados.",
             "Elaboración de informes técnicos y apoyo en la planificación de mantenimientos preventivos.",
@@ -44,6 +45,7 @@
         "company": "Club de Entrenamiento Cerebral (CEC)",
         "location": "Quito, Ecuador",
         "period": "Feb 2019 – Dic 2023",
+        "modality": "Modalidad: por honorarios",
         "bullets": [
             "Tutoría en Matemáticas y Física para estudiantes de primaria y bachillerato.",
             "Diseño e impartición de talleres de robótica educativa para niños y jóvenes.",
@@ -51,5 +53,89 @@
             ]
         }
     }
+  },
+  "skills": {
+    "title": "Habilidades Técnicas",
+    "groups": {
+        "software": {
+        "title": "Software & Web",
+        "items": [
+            "React",
+            "TypeScript",
+            "JavaScript",
+            "HTML5",
+            "CSS3",
+            "Git & GitHub"
+        ]
+        },
+        "data": {
+        "title": "Data & Tools",
+        "items": [
+            "Power BI",
+            "Excel avanzado",
+            "MS Project",
+            "MySQL"
+            ]
+        },
+        "automation": {
+        "title": "Automation & Electronics",
+        "items": [
+            "TIA Portal",
+            "AutoCAD",
+            "EPLAN",
+            "Mantenimiento industrial",
+            "Automatización",
+            "Energías renovables"
+            ]
+        }
+    }
+  },
+  "softSkills": {
+    "title": "Habilidades Blandas",
+    "items": [
+        "Comunicación efectiva",
+        "Trabajo en equipo",
+        "Resolución de problemas",
+        "Pensamiento analítico",
+        "Adaptabilidad",
+        "Aprendizaje continuo",
+        "Organización",
+        "Responsabilidad"
+    ]
+  },
+  "certifications": {
+    "title": "Certificaciones Destacadas",
+    "items": [
+        {
+        "name": "Programa Experto en Gestión Ágil de Proyectos",
+        "issuer": "Certificación profesional",
+        "date": "Mar 2026",
+        "details": "Scrum, Kanban, Design Thinking, KPI y OKR, MS Project y gráficos personalizados avanzados · 27 horas"
+        },
+        {
+        "name": "Power BI para innovadores: Explora el poder de tus datos",
+        "issuer": "ConQuito",
+        "date": "Oct 2024",
+        "details": "Taller aprobado en modalidad virtual · 28 horas"
+        },
+        {
+        "name": "Paneles Solares 4KW: Diseño, Instalación y Mantenimiento",
+        "issuer": "Ministerio del Trabajo",
+        "date": "Nov 2024",
+        "details": "Capacitación continua semipresencial · 16 horas"
+        },
+        {
+        "name": "Prompt Engineering: Aprende a hablar con una inteligencia artificial generativa",
+        "issuer": "LinkedIn Learning",
+        "date": "Abr 2025",
+        "details": "Curso completado enfocado en inteligencia artificial generativa"
+        },
+        {
+        "name": "Edge AI",
+        "issuer": "Edge Impulse",
+        "date": "Mar 2025",
+        "details": "Curso completado sobre fundamentos y aplicación de Edge AI"
+        }
+    ]
   }
 }

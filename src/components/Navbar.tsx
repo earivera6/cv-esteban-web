@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
@@ -15,10 +15,26 @@ function Navbar() {
     setShowProjectsMenu(false);
   };
 
+  // i18n Para Traducir el Navbar y el botón de cambio de idioma
   const { t, i18n } = useTranslation();
 
   const toggleLanguage = () => {
     i18n.changeLanguage(i18n.language === "es" ? "en" : "es");
+  };
+
+  // Tema oscuro - claro
+  const [theme, setTheme] = useState<"light" | "dark">(() => {
+    const savedTheme = localStorage.getItem("theme");
+    return savedTheme === "dark" ? "dark" : "light";
+  });
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+    localStorage.setItem("theme", theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme((prev) => (prev === "light" ? "dark" : "light"));
   };
 
   return (
@@ -34,15 +50,6 @@ function Navbar() {
             <h1>Esteban Rivera</h1>
           </a>
         </div>
-        
-        <button
-          type="button"
-          className="menu-toggle"
-          onClick={() => setShowMobileMenu(true)}
-          aria-label="Abrir menú"
-        >
-          ☰
-        </button>
 
         <ul className="nav-menu">
           <li><a href={`${import.meta.env.BASE_URL}#about`} type="button" className="btn btn-dark" onMouseEnter={() => setShowProjectsMenu(false)}>{t("nav.about")}</a></li>
@@ -90,6 +97,23 @@ function Navbar() {
           onClick={toggleLanguage}
         >
           {i18n.language === "es" ? "EN" : "ES"}
+        </button>
+
+        <button
+          type="button"
+          className="theme-toggle"
+          onClick={toggleTheme}
+        >
+          {theme === "light" ? "🌙" : "☀️"}
+        </button>
+
+        <button
+          type="button"
+          className="menu-toggle"
+          onClick={() => setShowMobileMenu(true)}
+          aria-label="Abrir menú"
+        >
+          ☰
         </button>
 
       </nav>

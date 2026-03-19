@@ -10,8 +10,8 @@ html {
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f5f7fb;
-  color: #1f2937;
+  background-color: var(--bg-page);
+  color: var(--text-main);
   line-height: 1.6;
 }
 
@@ -65,21 +65,17 @@ main {
 }
 
 section {
-  background-color: white;
+  background-color: var(--bg-card);
   margin-bottom: 24px;
   padding: 32px;
   border-radius: 16px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  box-shadow: var(--shadow-card);
 }
 
 section h2 {
   font-size: 1.8rem;
   margin-bottom: 16px;
-  color: #0f172a;
-}
-
-section p {
-  margin-bottom: 12px;
+  color: var(--text-main);
 }
 
 #hero {
@@ -164,8 +160,8 @@ section p {
 
 /* Botón oscuro */
 .btn-dark {
-  background-color: #0f172a;
-  color: white;
+  background-color: var(--btn-dark-bg);
+  color: var(--btn-dark-text);
 }
 
 .btn-dark:hover {
@@ -175,8 +171,8 @@ section p {
 
 /* Botón claro */
 .btn-light {
-  background-color: #38bdf8;
-  color: #0f172a;
+  background-color: var(--btn-light-bg);
+  color: var(--btn-light-text);
 }
 
 .btn-light:hover {
@@ -195,13 +191,13 @@ section p {
 .experience-card h3 {
   font-size: 1.2rem;
   margin-bottom: 8px;
-  color: #0f172a;
+  color: var(--text-main);
 }
 
 .experience-company {
   font-weight: 700;
   margin-bottom: 4px;
-  color: #1e293b;
+  color: var(--text-main);
 }
 
 .experience-meta {
@@ -247,13 +243,13 @@ section p {
 .education-card h3 {
   font-size: 1.2rem;
   margin-bottom: 8px;
-  color: #0f172a;
+  color: var(--text-main);
 }
 
 .education-company {
   font-weight: 700;
   margin-bottom: 4px;
-  color: #1e293b;
+  color: var(--text-main);
 }
 
 .education-meta {
@@ -359,7 +355,7 @@ section p {
 .project-card h3 {
   font-size: 1.2rem;
   margin-bottom: 12px;
-  color: #0f172a;
+  color: var(--text-main);
 }
 
 .project-card p {
@@ -373,7 +369,8 @@ section p {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background-color: #0f172a;
+  background-color: var(--nav-bg);
+  color: var(--nav-text);
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
 }
 
@@ -558,6 +555,92 @@ section[id] {
 
 .lang-toggle:hover {
   background: #7dd3fc;
+}
+
+nav a,
+.projects-link,
+.projects-toggle {
+  color: var(--nav-text);
+}
+
+.experience-card,
+.education-card,
+.contact-card,
+.project-card {
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-soft);
+}
+
+.experience-meta,
+.education-meta,
+.project-card p,
+.megamenu-item p {
+  color: var(--text-muted);
+}
+
+.skill-tag {
+  background-color: var(--tag-bg);
+  color: var(--tag-text);
+}
+
+.theme-toggle {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: var(--nav-text);
+  border-radius: 8px;
+  padding: 8px 10px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+:root {
+  --bg-page: #f5f7fb;
+  --bg-card: #ffffff;
+  --bg-soft: #f8fafc;
+  --text-main: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+
+  --nav-bg: #0f172a;
+  --nav-text: #ffffff;
+
+  --tag-bg: #e2e8f0;
+  --tag-text: #0f172a;
+
+  --border-color: #e2e8f0;
+  --shadow-card: 0 4px 14px rgba(0, 0, 0, 0.06);
+
+  --btn-light-bg: #38bdf8;
+  --btn-light-text: #0f172a;
+  --btn-dark-bg: #0f172a;
+  --btn-dark-text: #ffffff;
+}
+
+[data-theme="dark"] {
+  --bg-page: #0b1120;
+  --bg-card: #111827;
+  --bg-soft: #1f2937;
+  --text-main: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+
+  --nav-bg: #020617;
+  --nav-text: #f8fafc;
+
+  --tag-bg: #334155;
+  --tag-text: #f8fafc;
+
+  --border-color: #334155;
+  --shadow-card: 0 8px 24px rgba(0, 0, 0, 0.35);
+
+  --btn-light-bg: #38bdf8;
+  --btn-light-text: #0f172a;
+  --btn-dark-bg: #e2e8f0;
+  --btn-dark-text: #0f172a;
 }
 
 @media (max-width: 768px) {

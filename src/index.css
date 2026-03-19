@@ -538,6 +538,10 @@ section p {
   color: #cbd5e1;
 }
 
+section[id] {
+  scroll-margin-top: 100px;
+}
+
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;

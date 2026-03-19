@@ -378,7 +378,8 @@ section p {
 }
 
 .navbar {
-  width: min(1100px, 90%);
+  width: 98%;
+  padding: 10px 32px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -391,6 +392,8 @@ section p {
   display: flex;
   gap: 20px;
   align-items: center;
+  flex: 1;
+  justify-content: center;
 }
 
 .menu-toggle {
@@ -409,7 +412,7 @@ section p {
 .projects-trigger {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
 }
 
 .projects-link {
@@ -540,6 +543,21 @@ section p {
 
 section[id] {
   scroll-margin-top: 100px;
+}
+
+.lang-toggle {
+  flex-shrink: 0;
+  background: #c4c4c4;
+  color: #0f172a;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.lang-toggle:hover {
+  background: #7dd3fc;
 }
 
 @media (max-width: 768px) {

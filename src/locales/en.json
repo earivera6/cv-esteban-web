@@ -1,0 +1,23 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "skills": "Skills",
+    "education": "Education",
+    "contact": "Contact",
+    "projects": "Projects ▼",
+    "allProjects": "All projects",
+    "programming": "Programming",
+    "design3d": "3D Design",
+    "automation": "Automation"
+  },
+  "hero": {
+    "label": "Professional portfolio",
+    "name": "Esteban Andrés Rivera Novillo",
+    "title": "Software Developer | Technical Operations, Automation & Electronics",
+    "description": "Electronics and Automation Engineer with experience in technical operations, support, maintenance, and software development. Focused on React, TypeScript, and digital solutions oriented to automation, efficiency, and problem solving.",
+    "contact": "Contact",
+    "cv": "View PDF Resume"
+  }
+}

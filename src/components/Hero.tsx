@@ -1,20 +1,22 @@
+import { useTranslation } from "react-i18next";
+
 function Hero() {
+  const { t } = useTranslation();
+
   return (
     <section id="hero">
       <div className="hero-layout">
         <div className="hero-text">
-          <p>Portafolio profesional</p>
-          <h2>Esteban Andrés Rivera Novillo</h2>
-          <h3>Software Engineer (Frontend)</h3>
+          <p>{t("hero.label")}</p>
+          <h2>{t("hero.name")}</h2>
+          <h3>{t("hero.title")}</h3>
           <p>
-            Ingeniero en Electrónica y Automatización especializado en React,
-            TypeScript y desarrollo web moderno. Este sitio reúne mi perfil,
-            habilidades técnicas y proyectos.
+            {t("hero.description")}
           </p>
 
           <div className="button-group">
             <a href="#contact" className="btn btn-light">
-              Contactar
+              {t("hero.contact")}
             </a>
             <a
               href="/cv-esteban-web/Brand/CV.pdf"
@@ -22,7 +24,7 @@ function Hero() {
               rel="noreferrer"
               className="btn btn-dark"
             >
-              Ver CV en PDF
+              {t("hero.cv")}
             </a>
           </div>
         </div>

@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 
 function ProjectsPage() {
+  const base = import.meta.env.BASE_URL;
   return (
     <div>
       <Navbar />

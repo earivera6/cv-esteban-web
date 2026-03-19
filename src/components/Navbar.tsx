@@ -99,12 +99,12 @@ function Navbar() {
           ×
         </button>
 
-        <a href={`${base}`} onClick={closeMobileMenu}>Inicio</a>
-        <a href={`${base}#about`} onClick={closeMobileMenu}>Sobre mí</a>
-        <a href={`${base}#experience`} onClick={closeMobileMenu}>Experiencia</a>
-        <a href={`${base}#skills`} onClick={closeMobileMenu}>Habilidades</a>
-        <a href={`${base}#education`} onClick={closeMobileMenu}>Educación</a>
-        <a href={`${base}#contact`} onClick={closeMobileMenu}>Contacto</a>
+        <a href={`${base}`} onClick={closeMobileMenu} className="btn btn-dark">Inicio</a>
+        <a href={`${base}#about`} onClick={closeMobileMenu} className="btn btn-dark">Sobre mí</a>
+        <a href={`${base}#experience`} onClick={closeMobileMenu} className="btn btn-dark">Experiencia</a>
+        <a href={`${base}#skills`} onClick={closeMobileMenu} className="btn btn-dark">Habilidades</a>
+        <a href={`${base}#education`} onClick={closeMobileMenu} className="btn btn-dark">Educación</a>
+        <a href={`${base}#contact`} onClick={closeMobileMenu} className="btn btn-dark">Contacto</a>
 
         <div className="mobile-projects">
           <button

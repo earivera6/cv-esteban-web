@@ -109,7 +109,7 @@ function Navbar() {
         <div className="mobile-projects">
           <button
             type="button"
-            className="mobile-projects-toggle"
+            className="btn btn-dark"
             onClick={() => setShowMobileProjectsMenu((prev) => !prev)}
           >
             Proyectos ▼
@@ -117,7 +117,7 @@ function Navbar() {
 
           {showMobileProjectsMenu && (
             <div className="mobile-projects-list">
-              <Link to="/projects" onClick={closeMobileMenu} className="btn btn-dark">
+              <Link to="/projects" onClick={closeMobileMenu} className="btn btn-light">
                 Todos los proyectos
               </Link>
               <a href={`${base}projects#programacion`} onClick={closeMobileMenu} className="btn btn-light">

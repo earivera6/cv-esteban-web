@@ -1,37 +1,129 @@
 import Navbar from "../components/Navbar";
+import { useTranslation } from "react-i18next";
+
+type ProjectItem = {
+  title: string;
+  description: string;
+  tags: string[];
+  repo: string;
+};
 
 function ProjectsPage() {
+  const { t } = useTranslation();
+
+  const programming = t("projects.categories.programming.items", {
+    returnObjects: true,
+  }) as ProjectItem[];
+
+  const design3d = t("projects.categories.design3d.items", {
+    returnObjects: true,
+  }) as ProjectItem[];
+
+  const automation = t("projects.categories.automation.items", {
+    returnObjects: true,
+  }) as ProjectItem[];
+
   return (
     <div>
       <Navbar />
 
       <main>
         <section>
-          <h2>Proyectos</h2>
-          <p>
-            Aquí mostraré mis proyectos organizados por categorías.
-          </p>
+          <h2>{t("projects.pageTitle")}</h2>
+          <p>{t("projects.pageIntro")}</p>
+        </section>
 
-          <div className="button-group">
-            <a href={import.meta.env.BASE_URL} className="btn btn-dark">
-              Volver al inicio
-            </a>
+        <section id="programming">
+          <h2>{t("projects.categories.programming.title")}</h2>
+          <div className="projects-grid">
+            {programming.map((project, index) => (
+              <article key={index} className="project-card">
+                <h3>{project.title}</h3>
+                <p>{project.description}</p>
+
+                <div className="skills-group">
+                  {project.tags.map((tag, i) => (
+                    <span key={i} className="skill-tag">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+
+                <div className="button-group">
+                  <a
+                    href={project.repo}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="btn btn-dark"
+                  >
+                    {t("projects.viewRepository")}
+                  </a>
+                </div>
+              </article>
+            ))}
           </div>
         </section>
 
-        <section id="programacion">
-          <h2>Programación</h2>
-          <p>Aquí irán mis proyectos de programación.</p>
+        <section id="design3d">
+          <h2>{t("projects.categories.design3d.title")}</h2>
+          <div className="projects-grid">
+            {design3d.map((project, index) => (
+              <article key={index} className="project-card">
+                <h3>{project.title}</h3>
+                <p>{project.description}</p>
+
+                <div className="skills-group">
+                  {project.tags.map((tag, i) => (
+                    <span key={i} className="skill-tag">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+
+                <div className="button-group">
+                  <a
+                    href={project.repo}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="btn btn-dark"
+                  >
+                    {t("projects.viewRepository")}
+                  </a>
+                </div>
+              </article>
+            ))}
+          </div>
         </section>
 
-        <section id="diseno-3d">
-          <h2>Diseño 3D</h2>
-          <p>Aquí irán mis proyectos de diseño 3D.</p>
-        </section>
+        <section id="automation">
+          <h2>{t("projects.categories.automation.title")}</h2>
+          <div className="projects-grid">
+            {automation.map((project, index) => (
+              <article key={index} className="project-card">
+                <h3>{project.title}</h3>
+                <p>{project.description}</p>
 
-        <section id="automatizacion">
-          <h2>Automatización</h2>
-          <p>Aquí irán mis proyectos de automatización.</p>
+                <div className="skills-group">
+                  {project.tags.map((tag, i) => (
+                    <span key={i} className="skill-tag">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+
+                <div className="button-group">
+                  <a
+                    href={project.repo}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="btn btn-dark"
+                  >
+                    {t("projects.viewRepository")}
+                  </a>
+                </div>
+              </article>
+            ))}
+          </div>
         </section>
       </main>
     </div>

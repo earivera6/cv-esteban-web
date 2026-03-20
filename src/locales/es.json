@@ -148,5 +148,102 @@
         "preview": "/certificates/edge-ai-preview.png"
         }
     ]
+  },
+  "education": {
+    "title": "Educación",
+    "items": [
+      {
+        "degree": "Ingeniería en Electrónica y Automatización",
+        "institution": "Universidad de las Fuerzas Armadas – ESPE",
+        "location": "Quito, Ecuador",
+        "period": "En curso / proceso de titulación"
+      }
+    ]
+  },
+  "languages": {
+    "title": "Idiomas",
+    "items": [
+      {
+        "name": "Español",
+        "level": "★★★★★"
+      },
+      {
+        "name": "Inglés",
+        "level": "★★★★☆"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contacto",
+    "location": "Quito, Ecuador",
+    "emailLabel": "Email:",
+    "phoneLabel": "Teléfono:",
+    "whatsapp": "Escribirme por WhatsApp",
+    "linkedin": "Mi LinkedIn",
+    "github": "Mi GitHub",
+    "cv": "Ver CV en PDF"
+  },
+  "projects": {
+    "homeTitle": "Proyectos",
+    "pageTitle": "Portafolio de Proyectos",
+    "pageIntro": "Aquí organizo mis proyectos por categorías para mostrar evidencia real de mis habilidades técnicas.",
+    "viewProjects": "Ver proyectos",
+    "viewRepository": "Ver repositorio",
+    "categories": {
+      "programming": {
+        "title": "Programación",
+        "description": "Aplicaciones web, sistemas y soluciones de software.",
+        "items": [
+          {
+            "title": "Sistema Helpdesk / Mesa de Ayuda",
+            "description": "Aplicación web para gestión de tickets, estados, agentes, seguimiento y calificación de solicitudes.",
+            "tags": ["React", "TypeScript", "Gestión de tickets"],
+            "repo": "#"
+          },
+          {
+            "title": "Plataforma de Cuestionarios con IA",
+            "description": "Proyecto orientado a integrar inteligencia artificial en flujos de resolución y evaluación de cuestionarios.",
+            "tags": ["React", "APIs", "IA"],
+            "repo": "#"
+          }
+        ]
+      },
+      "design3d": {
+        "title": "Diseño 3D",
+        "description": "Modelado, prototipado y diseño para impresión 3D.",
+        "items": [
+          {
+            "title": "Piezas funcionales para impresión 3D",
+            "description": "Diseño de piezas y prototipos orientados a resolver necesidades técnicas reales.",
+            "tags": ["CAD", "Modelado 3D", "Prototipado"],
+            "repo": "#"
+          },
+          {
+            "title": "Diseños personalizados",
+            "description": "Modelos personalizados para productos, pruebas visuales y fabricación digital.",
+            "tags": ["Diseño", "Impresión 3D", "Personalización"],
+            "repo": "#"
+          }
+        ]
+      },
+      "automation": {
+        "title": "Automatización",
+        "description": "Scripts, optimización de procesos e integraciones.",
+        "items": [
+          {
+            "title": "Automatización de reportes",
+            "description": "Scripts para reducir trabajo manual repetitivo y generar reportes automáticamente.",
+            "tags": ["Python", "Automatización", "Reportes"],
+            "repo": "#"
+          },
+          {
+            "title": "Integraciones y flujos",
+            "description": "Soluciones para conectar procesos y mejorar la productividad técnica.",
+            "tags": ["Scripts", "Procesos", "Optimización"],
+            "repo": "#"
+          }
+        ]
+      }
+    }
   }
 }

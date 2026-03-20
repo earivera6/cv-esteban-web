@@ -151,5 +151,102 @@
         "preview": "/certificates/edge-ai-preview.png"
         }
     ]
+  },
+  "education": {
+    "title": "Educación",
+    "items": [
+      {
+        "degree": "Ingeniería en Electrónica y Automatización",
+        "institution": "Universidad de las Fuerzas Armadas – ESPE",
+        "location": "Quito, Ecuador",
+        "period": "En curso / proceso de titulación"
+      }
+    ]
+  },
+  "languages": {
+    "title": "Languages",
+    "items": [
+      {
+        "name": "Spanish",
+        "level": "★★★★★"
+      },
+      {
+        "name": "English",
+        "level": "★★★★☆"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "location": "Quito, Ecuador",
+    "emailLabel": "Email:",
+    "phoneLabel": "Phone:",
+    "whatsapp": "Message me on WhatsApp",
+    "linkedin": "My LinkedIn",
+    "github": "My GitHub",
+    "cv": "View PDF Resume"
+  },
+  "projects": {
+    "homeTitle": "Projects",
+    "pageTitle": "Project Portfolio",
+    "pageIntro": "Here I organize my projects by categories to show real evidence of my technical skills.",
+    "viewProjects": "View projects",
+    "viewRepository": "View repository",
+    "categories": {
+      "programming": {
+        "title": "Programming",
+        "description": "Web applications, systems, and software solutions.",
+        "items": [
+          {
+            "title": "Helpdesk / Service Desk System",
+            "description": "Web application for ticket management, statuses, agents, tracking, and request rating.",
+            "tags": ["React", "TypeScript", "Ticket management"],
+            "repo": "#"
+          },
+          {
+            "title": "AI-based Quiz Platform",
+            "description": "Project aimed at integrating artificial intelligence into quiz-solving and evaluation workflows.",
+            "tags": ["React", "APIs", "AI"],
+            "repo": "#"
+          }
+        ]
+      },
+      "design3d": {
+        "title": "3D Design",
+        "description": "Modeling, prototyping, and design for 3D printing.",
+        "items": [
+          {
+            "title": "Functional 3D printed parts",
+            "description": "Design of parts and prototypes aimed at solving real technical needs.",
+            "tags": ["CAD", "3D Modeling", "Prototyping"],
+            "repo": "#"
+          },
+          {
+            "title": "Custom designs",
+            "description": "Custom models for products, visual testing, and digital fabrication.",
+            "tags": ["Design", "3D Printing", "Customization"],
+            "repo": "#"
+          }
+        ]
+      },
+      "automation": {
+        "title": "Automation",
+        "description": "Scripts, process optimization, and integrations.",
+        "items": [
+          {
+            "title": "Report automation",
+            "description": "Scripts to reduce repetitive manual work and automatically generate reports.",
+            "tags": ["Python", "Automation", "Reports"],
+            "repo": "#"
+          },
+          {
+            "title": "Integrations and workflows",
+            "description": "Solutions to connect processes and improve technical productivity.",
+            "tags": ["Scripts", "Processes", "Optimization"],
+            "repo": "#"
+          }
+        ]
+      }
+    }
   }
 }

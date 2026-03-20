@@ -1,41 +1,42 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 function Projects() {
+  const { t } = useTranslation();
+
+
   return (
     <section id="projects">
-      <h2>Proyectos</h2>
+      <h2>{t("projects.homeTitle")}</h2>
 
       <div className="projects-grid">
         <article className="project-card">
-          <h3>Programación</h3>
+          <h3>{t("projects.categories.programming.title")}</h3>
           <p>
-            Aplicaciones web, interfaces, lógica de negocio y proyectos
-            desarrollados con tecnologías frontend y backend.
+            {t("projects.categories.programming.description")}
           </p>
           <Link to="/projects#programacion" className="btn btn-dark">
-            Ver proyectos
+            {t("projects.viewProjects")}
           </Link>
         </article>
 
         <article className="project-card">
-          <h3>Diseño 3D</h3>
+          <h3>{t("projects.categories.design3d.title")}</h3>
           <p>
-            Modelado de piezas, prototipos y diseños orientados a impresión 3D
-            y solución de necesidades técnicas.
+            {t("projects.categories.design3d.description")}
           </p>
           <Link to="/projects#diseno-3d" className="btn btn-dark">
-            Ver proyectos
+            {t("projects.viewProjects")}
           </Link>
         </article>
 
         <article className="project-card">
-          <h3>Automatización</h3>
+          <h3>{t("projects.categories.automation.title")}</h3>
           <p>
-            Scripts, procesos automáticos e integraciones para optimizar tareas
-            y flujos de trabajo.
+            {t("projects.categories.automation.description")}
           </p>
           <Link to="/projects#automatizacion" className="btn btn-dark">
-            Ver proyectos
+            {t("projects.viewProjects")}
           </Link>
         </article>
       </div>

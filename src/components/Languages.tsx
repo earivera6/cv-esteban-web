@@ -1,18 +1,28 @@
+import { useTranslation } from "react-i18next";
+
+type LanguageItem = {
+  name: string;
+  level: string;
+};
+
 function Languages() {
+  const { t } = useTranslation();
+
+  const items = t("languages.items", {
+    returnObjects: true,
+  }) as LanguageItem[];
+
   return (
     <section id="languages">
-      <h2>Idiomas</h2>
+      <h2>{t("languages.title")}</h2>
 
       <div className="languages-grid">
-        <div className="education-card">
-          <h3>Español</h3>
-          <p className="stars">★★★★★</p>
-        </div>
-
-        <div className="education-card">
-          <h3>Inglés</h3>
-          <p className="stars">★★★★☆</p>
-        </div>
+        {items.map((item, index) => (
+          <div key={index} className="education-card">
+            <h3>{item.name}</h3>
+            <p className="stars">{item.level}</p>
+          </div>
+        ))}
       </div>
     </section>
   );

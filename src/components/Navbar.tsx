@@ -52,11 +52,11 @@ function Navbar() {
         </div>
 
         <ul className="nav-menu">
-          <li><a href={`${import.meta.env.BASE_URL}#about`} type="button" className="btn btn-dark" onMouseEnter={() => setShowProjectsMenu(false)}>{t("nav.about")}</a></li>
-          <li><a href={`${import.meta.env.BASE_URL}#experience`} type="button" className="btn btn-dark" onMouseEnter={() => setShowProjectsMenu(false)}>{t("nav.experience")}</a></li>
-          <li><a href={`${import.meta.env.BASE_URL}#skills`} type="button" className="btn btn-dark" onMouseEnter={() => setShowProjectsMenu(false)}>{t("nav.skills")}</a></li>
-          <li><a href={`${import.meta.env.BASE_URL}#education`} type="button" className="btn btn-dark" onMouseEnter={() => setShowProjectsMenu(false)}>{t("nav.education")}</a></li>
-          <li><a href={`${import.meta.env.BASE_URL}#contact`} type="button" className="btn btn-dark" onMouseEnter={() => setShowProjectsMenu(false)}>{t("nav.contact")}</a></li>
+          <li><a href={`${import.meta.env.BASE_URL}#about`} type="button" className="btn btn-dark">{t("nav.about")}</a></li>
+          <li><a href={`${import.meta.env.BASE_URL}#experience`} type="button" className="btn btn-dark">{t("nav.experience")}</a></li>
+          <li><a href={`${import.meta.env.BASE_URL}#skills`} type="button" className="btn btn-dark">{t("nav.skills")}</a></li>
+          <li><a href={`${import.meta.env.BASE_URL}#education`} type="button" className="btn btn-dark">{t("nav.education")}</a></li>
+          <li><a href={`${import.meta.env.BASE_URL}#contact`} type="button" className="btn btn-dark">{t("nav.contact")}</a></li>
 
           <li
             className="projects-dropdown"
@@ -71,7 +71,7 @@ function Navbar() {
             </div>
 
             {showProjectsMenu && (
-              <div className="projects-megamenu">
+              <div className="projects-megamenu" onMouseLeave={() => setShowProjectsMenu(false)}>
                 <Link to="/projects#programacion" className="megamenu-item">
                   <h4>{t("nav.programming")}</h4>
                   <p>Apps web, interfaces, lógica y desarrollo de software.</p>

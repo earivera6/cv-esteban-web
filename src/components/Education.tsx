@@ -5,6 +5,7 @@ type EducationItem = {
   institution: string;
   location: string;
   period: string;
+  senescyt: string;
 };
 
 function Education() {
@@ -25,6 +26,7 @@ function Education() {
           <p className="education-meta">
             {item.period} · {item.location}
           </p>
+          <p className="education-senescyt">{item.senescyt}</p>
         </div>
       ))}
     </section>

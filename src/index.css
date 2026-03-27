@@ -681,6 +681,12 @@ nav a,
   border: 1px solid var(--border-color);
 }
 
+.education-senescyt {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
 @media (max-width: 768px) {
 
   .certifications-grid {

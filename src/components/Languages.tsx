@@ -3,6 +3,8 @@ import { useTranslation } from "react-i18next";
 type LanguageItem = {
   name: string;
   level: string;
+  description: string;
+  resume: string;
 };
 
 function Languages() {
@@ -21,6 +23,7 @@ function Languages() {
           <div key={index} className="education-card">
             <h3>{item.name}</h3>
             <p className="stars">{item.level}</p>
+            <p className="language-level">{item.resume}</p>
           </div>
         ))}
       </div>

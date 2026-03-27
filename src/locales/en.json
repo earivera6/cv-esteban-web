@@ -169,11 +169,15 @@
     "items": [
       {
         "name": "Spanish",
-        "level": "★★★★★"
+        "level": "★★★★★",
+        "resume": "Native",
+        "description": "Native language with full proficiency in oral and written communication."
       },
       {
         "name": "English",
-        "level": "★★★★☆"
+        "level": "★★★★☆",
+        "resume": "Intermediate (written and spoken)",
+        "description": "Intermediate level with the ability to communicate effectively in technical environments."
       }
     ]
   },

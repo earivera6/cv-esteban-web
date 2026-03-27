@@ -166,11 +166,15 @@
     "items": [
       {
         "name": "Español",
-        "level": "★★★★★"
+        "level": "★★★★★",
+        "resume": "Nativo",
+        "description": "Idioma nativo con dominio completo en comunicación oral y escrita."
       },
       {
         "name": "Inglés",
-        "level": "★★★★☆"
+        "level": "★★★★☆",
+        "resume": "Intermedio (escrito y hablado)",
+        "description": "Nivel intermedio con capacidad para comunicación efectiva en entornos técnicos."
       }
     ]
   },

@@ -194,58 +194,53 @@
     "pageIntro": "Aquí organizo mis proyectos por categorías para mostrar evidencia real de mis habilidades técnicas.",
     "viewProjects": "Ver proyectos",
     "viewRepository": "Ver repositorio",
+    "viewDemo": "Ver demo",
     "categories": {
       "programming": {
         "title": "Programación",
-        "description": "Aplicaciones web, sistemas y soluciones de software.",
+        "description": "Aplicaciones web y herramientas construidas para resolver necesidades reales.",
         "items": [
           {
-            "title": "Sistema Helpdesk / Mesa de Ayuda",
-            "description": "Aplicación web para gestión de tickets, estados, agentes, seguimiento y calificación de solicitudes.",
-            "tags": ["React", "TypeScript", "Gestión de tickets"],
-            "repo": "#"
+            "title": "CV Web / Portafolio Personal",
+            "description": "Sitio web desarrollado para presentar mi perfil profesional, experiencia, habilidades y proyectos de forma modular, escalable y alineada a distintos enfoques laborales.",
+            "tags": ["React", "TypeScript", "Vite", "i18n"],
+            "repo": "https://github.com/earivera6/cv-esteban-web",
+            "demo": "https://earivera6.github.io/cv-esteban-web/",
+            "preview": "/images/projects/cv-web-preview.png",
+            "status": "published"
           },
           {
-            "title": "Plataforma de Cuestionarios con IA",
-            "description": "Proyecto orientado a integrar inteligencia artificial en flujos de resolución y evaluación de cuestionarios.",
-            "tags": ["React", "APIs", "IA"],
-            "repo": "#"
-          }
-        ]
-      },
-      "design3d": {
-        "title": "Diseño 3D",
-        "description": "Modelado, prototipado y diseño para impresión 3D.",
-        "items": [
-          {
-            "title": "Piezas funcionales para impresión 3D",
-            "description": "Diseño de piezas y prototipos orientados a resolver necesidades técnicas reales.",
-            "tags": ["CAD", "Modelado 3D", "Prototipado"],
-            "repo": "#"
-          },
-          {
-            "title": "Diseños personalizados",
-            "description": "Modelos personalizados para productos, pruebas visuales y fabricación digital.",
-            "tags": ["Diseño", "Impresión 3D", "Personalización"],
-            "repo": "#"
+            "title": "Adaptive Resume Builder",
+            "description": "Sistema orientado a adaptar CVs según requisitos de postulaciones específicas, con estructura modular y lógica para personalización por perfil.",
+            "tags": ["React", "TypeScript", "CV", "ATS"],
+            "repo": "#",
+            "status": "draft"
           }
         ]
       },
       "automation": {
         "title": "Automatización",
-        "description": "Scripts, optimización de procesos e integraciones.",
+        "description": "Soluciones orientadas a optimizar procesos y trazabilidad.",
         "items": [
           {
-            "title": "Automatización de reportes",
-            "description": "Scripts para reducir trabajo manual repetitivo y generar reportes automáticamente.",
-            "tags": ["Python", "Automatización", "Reportes"],
-            "repo": "#"
-          },
+            "title": "Inventario textil con NFC",
+            "description": "Proyecto para registrar ingreso y salida de prendas en el inventario de una agrupación de danza mediante etiquetas NFC y lectura con celular.",
+            "tags": ["NFC", "Inventario", "Trazabilidad"],
+            "repo": "#",
+            "status": "draft"
+          }
+        ]
+      },
+      "design3d": {
+        "title": "Diseño 3D",
+        "description": "Desarrollo de productos y prototipos funcionales.",
+        "items": [
           {
-            "title": "Integraciones y flujos",
-            "description": "Soluciones para conectar procesos y mejorar la productividad técnica.",
-            "tags": ["Scripts", "Procesos", "Optimización"],
-            "repo": "#"
+            "title": "Luz cálida/fría portátil para fotografía y video",
+            "description": "Proyecto de luminaria semiprofesional portátil enfocada en portabilidad, funcionalidad y aplicación en creación de contenido.",
+            "tags": ["Diseño de producto", "Prototipado", "Impresión 3D"],
+            "repo": "#",
+            "status": "draft"
           }
         ]
       }

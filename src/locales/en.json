@@ -197,58 +197,53 @@
     "pageIntro": "Here I organize my projects by categories to show real evidence of my technical skills.",
     "viewProjects": "View projects",
     "viewRepository": "View repository",
+    "viewDemo": "View demo",
     "categories": {
       "programming": {
         "title": "Programming",
-        "description": "Web applications, systems, and software solutions.",
+        "description": "Web applications and tools built to solve real needs.",
         "items": [
           {
-            "title": "Helpdesk / Service Desk System",
-            "description": "Web application for ticket management, statuses, agents, tracking, and request rating.",
-            "tags": ["React", "TypeScript", "Ticket management"],
-            "repo": "#"
+            "title": "Web CV / Personal Portfolio",
+            "description": "Website developed to present my professional profile, experience, skills, and projects in a modular, scalable way aligned with different job paths.",
+            "tags": ["React", "TypeScript", "Vite", "i18n"],
+            "repo": "https://github.com/earivera6/cv-esteban-web",
+            "demo": "https://earivera6.github.io/cv-esteban-web/",
+            "preview": "/images/projects/cv-web-preview.png",
+            "status": "published"
           },
           {
-            "title": "AI-based Quiz Platform",
-            "description": "Project aimed at integrating artificial intelligence into quiz-solving and evaluation workflows.",
-            "tags": ["React", "APIs", "AI"],
-            "repo": "#"
+            "title": "Adaptive Resume Builder",
+            "description": "System aimed at adapting resumes according to specific job requirements, with a modular structure and logic for profile-based customization.",
+            "tags": ["React", "TypeScript", "Resume", "ATS"],
+            "repo": "#",
+            "status": "draft"
           }
         ]
       },
       "design3d": {
         "title": "3D Design",
-        "description": "Modeling, prototyping, and design for 3D printing.",
+        "description": "Development of products and functional prototypes.",
         "items": [
           {
-            "title": "Functional 3D printed parts",
-            "description": "Design of parts and prototypes aimed at solving real technical needs.",
-            "tags": ["CAD", "3D Modeling", "Prototyping"],
-            "repo": "#"
-          },
-          {
-            "title": "Custom designs",
-            "description": "Custom models for products, visual testing, and digital fabrication.",
-            "tags": ["Design", "3D Printing", "Customization"],
-            "repo": "#"
+            "title": "Portable warm/cool light for photography and video",
+            "description": "Portable semi-professional lighting project focused on portability, functionality, and content creation use cases.",
+            "tags": ["Product design", "Prototyping", "3D printing"],
+            "repo": "#",
+            "status": "draft"
           }
         ]
       },
       "automation": {
         "title": "Automation",
-        "description": "Scripts, process optimization, and integrations.",
+        "description": "Solutions focused on process optimization and traceability.",
         "items": [
           {
-            "title": "Report automation",
-            "description": "Scripts to reduce repetitive manual work and automatically generate reports.",
-            "tags": ["Python", "Automation", "Reports"],
-            "repo": "#"
-          },
-          {
-            "title": "Integrations and workflows",
-            "description": "Solutions to connect processes and improve technical productivity.",
-            "tags": ["Scripts", "Processes", "Optimization"],
-            "repo": "#"
+            "title": "Textile inventory with NFC",
+            "description": "Project to track the entry and exit of garments in a dance group inventory using NFC tags and mobile phone reading.",
+            "tags": ["NFC", "Inventory", "Traceability"],
+            "repo": "#",
+            "status": "draft"
           }
         ]
       }

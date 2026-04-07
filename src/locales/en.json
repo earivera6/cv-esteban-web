@@ -209,7 +209,7 @@
             "tags": ["React", "TypeScript", "Vite", "i18n"],
             "repo": "https://github.com/earivera6/cv-esteban-web",
             "demo": "https://earivera6.github.io/cv-esteban-web/",
-            "preview": "/images/projects/cv-web-preview.png",
+            "preview": "images/projects/cv-web-preview.png",
             "status": "published"
           },
           {

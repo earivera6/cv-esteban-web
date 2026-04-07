@@ -62,25 +62,35 @@ function ProjectsPage() {
             <div className="projects-grid">
               {category.items.map((project) => (
                 <article key={project.title} className="project-card">
-                  {project.preview && (
-                    <div className="project-preview">
+                  <div className="project-preview">
+                    {project.preview ? (
                       <img
-                        src={project.preview}
+                        src={`${import.meta.env.BASE_URL}${project.preview}`}
                         alt={`Preview de ${project.title}`}
                         className="project-preview-image"
                         loading="lazy"
                       />
-                    </div>
-                  )}
-                  <h3>{project.title}</h3>
-                  <p>{project.description}</p>
+                    ) : (
+                      <div className="project-preview-fallback">
+                        <span className="project-preview-fallback-icon">⌘</span>
+                        <span className="project-preview-fallback-text">
+                          Previsualización no disponible
+                        </span>
+                      </div>
+                    )}
+                  </div>
 
-                  <div className="skills-group">
-                    {project.tags.map((tag) => (
-                      <span key={tag} className="skill-tag">
-                        {tag}
-                      </span>
-                    ))}
+                  <div className="project-card-body">
+                    <h3>{project.title}</h3>
+                    <p>{project.description}</p>
+
+                    <div className="skills-group">
+                      {project.tags.map((tag) => (
+                        <span key={tag} className="skill-tag">
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
                   </div>
 
                   <div className="button-group">

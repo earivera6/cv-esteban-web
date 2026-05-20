@@ -247,7 +247,7 @@
           },
           {
             "title": "Financial and Administrative Automation Template",
-            "description": "Web app developed with Google Sheets and Google Apps Script to manage clients, contracts, monthly payments, invoices, expenses, receivables and reports. Includes automatic generation of structured sheets, matrix formulas, editable configuration and workflow prepared for small businesses or organizations. The user demo is: admin@demo.com with password: 123456",
+            "description": "Web app developed with Google Sheets and Google Apps Script to manage clients, contracts, monthly payments, invoices, expenses, receivables and reports. Includes automatic generation of structured sheets, matrix formulas, editable configuration and workflow prepared for small businesses or organizations. For do a test, the user demo is: admin@demo.com with password: 123456",
             "tags": [
               "Google Apps Script",
               "Google Sheets",

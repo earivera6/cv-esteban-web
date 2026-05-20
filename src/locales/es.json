@@ -228,6 +228,23 @@
             "tags": ["NFC", "Inventario", "Trazabilidad"],
             "repo": "#",
             "status": "draft"
+          },
+          {
+            "title": "Plantilla de automatización financiera y administrativa",
+            "description": "Web app desarrollada con Google Sheets y Google Apps Script para gestionar clientes, contratos, cobros mensuales, pagos, egresos, cartera y reportes. Incluye generación automática de hojas estructuradas, fórmulas matriz, configuración editable y flujo preparado para pequeños negocios u organizaciones.",
+            "tags": [
+              "Google Apps Script",
+              "Google Sheets",
+              "JavaScript",
+              "Automatización",
+              "Dashboard",
+              "Gestión financiera",
+              "Web App"
+            ],
+            "repo": "",
+            "demo": "https://script.google.com/macros/s/AKfycbwA9Yaq0mEzMUzzT-vrEZXaE0jXq4c2twkUYTeulB2yYeJhMJyAZwWiuX3iOHTCbjSU/exec",
+            "preview": "images/projects/plantilla-financiera.png",
+            "status": "published"
           }
         ]
       },

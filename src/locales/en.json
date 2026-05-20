@@ -244,6 +244,23 @@
             "tags": ["NFC", "Inventory", "Traceability"],
             "repo": "#",
             "status": "draft"
+          },
+          {
+            "title": "Financial and Administrative Automation Template",
+            "description": "Web app developed with Google Sheets and Google Apps Script to manage clients, contracts, monthly payments, invoices, expenses, receivables and reports. Includes automatic generation of structured sheets, matrix formulas, editable configuration and workflow prepared for small businesses or organizations.",
+            "tags": [
+              "Google Apps Script",
+              "Google Sheets",
+              "JavaScript",
+              "Automation",
+              "Dashboard",
+              "Financial Management",
+              "Web App"
+            ],
+            "repo": "",
+            "demo": "https://script.google.com/macros/s/AKfycbwA9Yaq0mEzMUzzT-vrEZXaE0jXq4c2twkUYTeulB2yYeJhMJyAZwWiuX3iOHTCbjSU/exec",
+            "preview": "images/projects/plantilla-financiera.png",
+            "status": "published"
           }
         ]
       }

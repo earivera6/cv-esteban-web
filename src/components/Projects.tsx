@@ -5,7 +5,7 @@ type ProjectItem = {
   title: string;
   description: string;
   tags: string[];
-  repo: string;
+  repo?: string;
   demo?: string;
   status: "published" | "draft" | "planned";
 };

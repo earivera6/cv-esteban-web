@@ -5,7 +5,7 @@ type ProjectItem = {
   title: string;
   description: string;
   tags: string[];
-  repo: string;
+  repo?: string;
   demo?: string;
   preview?: string;
   status: "published" | "draft" | "planned";
@@ -23,7 +23,7 @@ function ProjectsPage() {
   const categoryConfig = [
     { key: "programming", sectionId: "programming" },
     { key: "design3d", sectionId: "design3d" },
-    { key: "automation", sectionId: "automation" },
+    { key: "automation", sectionId: "automatizacion" },
   ] as const;
 
   const visibleCategories = categoryConfig
